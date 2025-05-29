@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eksfera - Eksplorasi Ekosistem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Selamat Datang di <span class="highlight">EKSFERA</span></h1>
+    <p class="tagline">Eksplorasi Ekosistem Secara Interaktif</p>
+  </header>
+
+  <nav>
+    <a href="#intro">Tentang</a>
+    <a href="#author">Pembuat</a>
+    <a href="#interactive">Simulasi</a>
+    <a href="#quiz">Kuis</a>
+  </nav>
+
+  <main>
+    <section id="intro" class="intro">
+      <h2>Tentang Media</h2>
+      <p>
+        Eksfera adalah media pembelajaran interaktif bertema ekosistem untuk siswa kelas 10. Dirancang untuk membantu pemahaman dengan visual menarik dan interaksi yang menyenangkan.
+      </p>
+    </section>
+
+    <section id="author" class="author">
+      <h2>Pembuat</h2>
+      <p><strong>Rani Anggraeni</strong><br />Mahasiswa Universitas Siliwangi<br />Program Studi Pendidikan Biologi</p>
+    </section>
+
+    <section id="interactive" class="interactive">
+      <h2>Simulasi Ekosistem Sederhana</h2>
+      <button onclick="simulateImpact()">Klik untuk Simulasi Dampak Polusi</button>
+      <p id="simulation-result"></p>
+    </section>
+
+    <section id="quiz" class="quiz">
+      <h2>Kuis Cepat</h2>
+      <p><strong>Pertanyaan:</strong> Apa akibat utama dari pencemaran air terhadap ekosistem sungai?</p>
+      <button onclick="checkAnswer('a')">A. Meningkatnya populasi ikan</button><br><br>
+      <button onclick="checkAnswer('b')">B. Hilangnya keanekaragaman hayati</button><br><br>
+      <button onclick="checkAnswer('c')">C. Air menjadi lebih jernih</button><br><br>
+      <p id="quiz-result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Eksfera - Rani Anggraeni</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
